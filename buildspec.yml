@@ -1,12 +1,7 @@
 version: 0.2
-
-env:
-  variables:
-    MyBucket: "pratice-task-for-digi-training"  # Replace with the actual bucket name or reference it dynamically
-
 phases:
   build:
     commands:
-      - echo "Copying index.html to S3 bucket $MyBucket"
-      - aws s3 cp index.html s3://$MyBucket/
+      - aws s3 cp index.html s3://demo-test-digi-practice-bucket-project/
+
 
